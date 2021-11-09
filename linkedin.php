@@ -15,7 +15,7 @@
 		public function init() {
 			// Section Info
 			$this->set_section_title( __('Linkedin', 'sv_tracking_manager' ) )
-				 ->set_section_desc(__( sprintf('%sLinkedin Ads Login%s', '<a target="_blank" href="https://www.linkedin.com/campaignmanager/">','</a>'), 'sv_tracking_manager' ))
+				 ->set_section_desc(__( sprintf('%sLinkedin Insighs Login%s', '<a target="_blank" href="https://www.linkedin.com/campaignmanager/">','</a>'), 'sv_tracking_manager' ))
 				 ->set_section_type( 'settings' )
 				 ->load_settings()
 				 ->register_scripts()
@@ -33,7 +33,7 @@
 				 ->load_type( 'checkbox' );
 			
 			$this->get_setting('tracking_id')
-				 ->set_title( __( 'Tracking ID', 'sv_tracking_manager' ) )
+				 ->set_title( __( 'Insights Tracking ID', 'sv_tracking_manager' ) )
 				 ->set_description( __( sprintf('%sHow to retrieve Tracking ID%s', '<a target="_blank" href="https://www.linkedin.com/help/linkedin/answer/67595/linkedin-conversion-tracking-ubersicht?lang=en">','</a>'), 'sv_tracking_manager' ) )
 				 ->load_type( 'text' );
 			return $this;
